@@ -47,6 +47,7 @@ const Navbar = () => {
 
     return () => {
         window.removeEventListener("scroll", handleScroll);
+       
     };
 }, [location.pathname]);
 
@@ -109,7 +110,7 @@ const Navbar = () => {
                 </button>}
                 
 
-                {!user && <button onClick={openSignIn} className="bg-black text-white px-8 py-2.5 rounded-full transition-all duration-500" oncl >
+                {!user && <button onClick={openSignIn} className="bg-black text-white px-8 py-2.5 rounded-full transition-all duration-500"  >
                     Login
                 </button>}
                 
